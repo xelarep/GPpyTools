@@ -10,6 +10,7 @@ usage:
      
 BBB, 27-NOV-2021 - initial script
 BBB, 14-NOV-2022 - added Rackspace Names and delayedStart Info, added function AddPluginInfo(), Cleanup...
+BBB, 19-NOV-2022 - final cleanup to provide binaries for the first time...
 
 '''
 
@@ -48,6 +49,9 @@ def main():
      args = sys.argv[1:]
      if len(args) == 1 and args[0] == '-s':
           inputfile = "Gig Performer.settings"
+          # if you want to read from your current config, just adjust uncomment and adjust to your personal situation
+          #inputfile = "/Users/USERNAME/Library/Application Support/GigPerformer/Gig Performer.settings" # on a Mac...
+          
           if os.path.isfile(inputfile):
                outputCSV = "GigPerformerPlugins.csv"
                outputXLS = "GigPerformerPlugins.xlsx"

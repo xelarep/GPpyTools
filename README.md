@@ -39,6 +39,11 @@ The binaries work the same way as the Python script...
                                       and write to 'gigfile.gig.xlsx' in same folder
 ```
 
+### Mac users
+After downloading the GPpyTools binary macOS may block it as it is not signed and suspected to be malware. Also the Download folder in macOS is something 'special' and may need some extra permission in the terminal...
+So, just move the GPpyTools app to a suitable folder (e.g. ~/temp) and Shift-right click to open GPpyTools for the first time. Allow macOS to open and wait for the now opening terminal to finish the first time.
+Now you can 'cd' in any terminal to your folder from above and start `./GPpyTools "you gig file.gig"` and everything should work.
+
 
 ## Disclaimer
 
